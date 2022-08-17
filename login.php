@@ -1,0 +1,82 @@
+<?php 
+
+  require "conexion.php";
+  session_start();
+  if($_POST){
+    $usuario = $_POST['usuario'];
+    $password= $_POST['password'];
+
+    $sql= "select id,usuario,password,nombre from administrador where usuario='$usuario'";
+
+    $resultado= $conn->query($sql);
+    $num=$resultado->num_rows;
+    if ($num>0){
+      $row=$resultado->fetch_assoc();
+      $pass_bd=$row['password'];
+      $pass_c=sha1($password);
+      if ($pass_bd==$pass_c) {
+        $_SESSION['nombre']=$row['nombre'];
+        $_SESSION['id']=$row['id'];
+        header("Location: index.php");
+
+      }else{
+        echo "<script type='text/javascript'>alert('la contraseña no es correcta')</script>";
+      }
+    }else{
+
+    }
+
+  }
+  
+?>
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Login Form with floating placeholder and light button</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-box">
+  <h2>Inicia sesion para entrar al sistemas</h2>
+  <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <div class="user-box">
+      <input type="text" name="usuario" required="">
+      <label>Usuario</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" required="">
+      <label>Contraseña</label>
+    </div>
+    <a ><button class="btn" type="submit"><span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit</button>
+      
+    </a>
+    
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
+<style>
+    
+  
+    .btn {
+        cursor: pointer;
+        border: 1px solid #3498db;
+        background-color: transparent;
+        height: 30px;
+        width: 100px;
+        color: #3498db;
+        font-size: 1.0em;
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    }
+</style>
