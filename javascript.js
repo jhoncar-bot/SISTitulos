@@ -18,7 +18,6 @@ $(document).ready(function () {
     $('#tabla').DataTable({
         order:[[1,'desc']],
     	language: {
-            
     "processing": "Procesando...",
     "lengthMenu": "Mostrar _MENU_ registros",
     "zeroRecords": "No se encontraron resultados",
@@ -258,8 +257,8 @@ $(document).ready(function () {
         "emptyStates": "No hay Estados guardados",
         "removeTitle": "Remover Estado",
         "renameTitle": "Cambiar Nombre Estado"
-    
-} 
+
+}
         }
     });
 });
