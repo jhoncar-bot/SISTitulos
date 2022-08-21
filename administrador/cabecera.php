@@ -8,16 +8,16 @@ include("sesionActivada.php");
 <head>
     <meta charset="utf-8" />
     <title>SISTITULOS</title>
-    <link rel="icon" type="image/x-icon" href="logogrdrep.png">
-    <link rel="stylesheet" href="jscss/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="jscss/bootstrap/css/bootstrap-theme.min.css" />
-    <script src="jscss/jquery.js"></script>
-    <script src="jscss/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="lib/jquery-3.5.1.js"></script>
-    <script type="text/javascript" src="lib/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="lib/select2.min.js"></script>
-    <link href="lib/select2.min.css" rel="stylesheet" />
-    <link href="lib/jquery.dataTables.min.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="../logos/logogrdrep.png">
+    <link rel="stylesheet" href="../jscss/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../jscss/bootstrap/css/bootstrap-theme.min.css" />
+    <script src="../jscss/jquery.js"></script>
+    <script src="../jscss/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="../lib/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../lib/select2.min.js"></script>
+    <link href="../lib/select2.min.css" rel="stylesheet" />
+    <link href="../lib/jquery.dataTables.min.css" rel="stylesheet" />
 </head>
 <body>
   <br>
@@ -44,7 +44,7 @@ include("sesionActivada.php");
                     </ul>
                 </li>
                 <li ><a href="titulado_listado.php">Titulado</a></li>
-                <li ><a href="consulta_titulos.php" target="_blank">SiSTitulos</a></li>
+                <li ><a href="../" target="_blank">SiSTitulos</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#"><?php echo "Bienvenido ".$nombre ?></a></li>

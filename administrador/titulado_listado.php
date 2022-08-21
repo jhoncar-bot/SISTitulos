@@ -72,7 +72,7 @@
 	<div class="form-group">
 		<label  class="col-sm-12 ">Link: </label>
 		<div class="col-sm-12">
-			<input type="text" class="form-control"  name="fecha_regis" value="<?php echo $link; ?>" placeholder="Link">
+			<input type="text" class="form-control"  name="link" value="<?php echo $link; ?>" placeholder="Link">
 		</div>
 	</div>
 	<div class="form-group">
