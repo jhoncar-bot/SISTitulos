@@ -79,7 +79,7 @@ if(!empty($id)){
 			echo "<td>".$reg['nivel']."</td>";
 			echo "<td>".$reg['instituto']."</td>";
 			echo "<td class='text-right'>
-			<a href='titulo_evalua.php?op=eliminar&id=".$reg['titulo_id']."' class='btn btn-danger'><span class='glyphicon glyphicon-remove'></span></a>
+			<a href='titulo_evalua.php?op=eliminar&id=".$reg['titulo_id']."' class='btn btn-danger confirmar'><span class='glyphicon glyphicon-remove'></span></a>
 			<a href='titulo_listado.php?id=".$reg['titulo_id']."' class='btn btn-success'><span class='glyphicon glyphicon-pencil'></span></a>
 			</td>";
 			echo "</tr>";

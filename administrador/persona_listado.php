@@ -80,7 +80,7 @@
 			echo "<td>".$reg['nombre']."</td>";
 
 			echo "<td class='text-right'>
-			<a href='persona_evalua.php?op=eliminar&id=".$reg['dni']."' class='btn btn-danger'><span class='glyphicon glyphicon-remove'></span></a>
+			<a href='persona_evalua.php?op=eliminar&id=".$reg['dni']."' class='btn btn-danger confirmar'><span class='glyphicon glyphicon-remove'></span></a>
 			<a href='persona_listado.php?id=".$reg['dni']."' class='btn btn-success'><span class='glyphicon glyphicon-pencil'></span></a>
 			</td>";
 			echo "</tr>";

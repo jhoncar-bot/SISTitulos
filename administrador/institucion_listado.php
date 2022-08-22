@@ -76,7 +76,7 @@ if($id != ''){
 			echo "<td>".$reg['pais']."</td>";
 			echo "<td>".$reg['region']."</td>";
 			echo "<td class='text-right'>
-			<a href='institucion_evalua.php?op=eliminar&id=".$reg['cod_mod']."' class='btn btn-danger'><span class='glyphicon glyphicon-remove'></span></a>
+			<a href='institucion_evalua.php?op=eliminar&id=".$reg['cod_mod']."' class='btn btn-danger confirmar'><span class='glyphicon glyphicon-remove'></span></a>
 			<a href='institucion_listado.php?id=".$reg['cod_mod']."' class='btn btn-success'><span class='glyphicon glyphicon-pencil'></span></a>
 			</td>";
 			echo "</tr>";
